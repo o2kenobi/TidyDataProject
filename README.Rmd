@@ -107,14 +107,14 @@ cnames<-names(bothsets)
 jmn<-grep("mean...[XYZ]",cnames)  #pick out the "mean" features for x,y,z
 tidymeans<-data.frame()
 activity<-unique(bothsets$activity)
-for (sbj in 1:6) {
-   for (act in activity){
-      c<-filter(bothsets,subject==sbj,activity==act)[,-(49:50)]
+for (act in activity){
+   for (sbj in 1:30) {
+      c<-filter(bothsets,subject==sbj, activity==act)[,-(49:50)]
       tidymeans<-rbind(tidymeans,c(apply(c,2,mean)))
    }
 }
-tidymeans$subject  <-rep(1:6,each=6)
-tidymeans$activity <-rep(activity,6)
+tidymeans$subject  <-rep(1:30,6)
+tidymeans$activity <-rep(activity,each=30)
 names(tidymeans)<-cnames
 ```
 
