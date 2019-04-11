@@ -1,7 +1,7 @@
 ##Project assignment for Cleaning Data week4
 #zfile="getdata_projectfiles_UCI HAR Dataset.zip"
 #dfiles<-unzip(zfile,exdir="data")
-dirhd<-"data/UCI HAR Dataset/"
+dirhd<-"UCI HAR Dataset/"
 dir.trn<-paste(dirhd,"train/",sep="")
 dir.test<-paste(dirhd,"test/",sep="")
 
@@ -18,7 +18,7 @@ ys1  <- read.table(paste(dir.trn,"y_train.txt",sep=""))
 #str(sbj1)                   #<-- 21 subjects, labels in 1-30
 #length(unique(sbj1$V1))     #[1] 21
 #str(xs1)
-#str(ys1)
+#str(ys1) 
 #unique(ys1)                 #<-- activity label by no.
 names(xs1) <-ftures$V2
 ys1$act <-as.character(rep("o",dim(ys1)[1]))
