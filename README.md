@@ -201,11 +201,12 @@ names(tidymeans)<-cnames
 write.table(tidymeans,file="tidymeans.txt",row.name=F) 
 ```
 
-### Codebook
+Codebook
+--------
 
 This is a re-arranged dataset merged from the Human Activity Recognition Using Smartphones Dataset, containing the mean values of the variables (as column names of the merged data) for each subject and each activity.
+========================================================================================================================================================================================================================
 
-==================================================================
 Human Activity Recognition Using Smartphones Dataset
 Adopted from Version 1.0
 ==================================================================
@@ -227,46 +228,47 @@ The data variables cover the estimated mean and standard deviation (std) of the 
 7. "tBodyAccJerk-mean()-X"
 8. "tBodyAccJerk-mean()-Y"
 9. "tBodyAccJerk-mean()-Z"
-10 "tBodyGyro-mean()-X"
-11 "tBodyGyro-mean()-Y"
-12 "tBodyGyro-mean()-Z"
-13 "tBodyGyroJerk-mean()-X"
-14 "tBodyGyroJerk-mean()-Y"
-15 "tBodyGyroJerk-mean()-Z"
-16 "fBodyAcc-mean()-X"
-17 "fBodyAcc-mean()-Y"
-18 "fBodyAcc-mean()-Z"
-19 "fBodyAccJerk-mean()-X"
-20 "fBodyAccJerk-mean()-Y"
-21 "fBodyAccJerk-mean()-Z"
-22 "fBodyGyro-mean()-X"
-23 "fBodyGyro-mean()-Y"
-24 "fBodyGyro-mean()-Z"
-25 "tBodyAcc-std()-X"
-26 "tBodyAcc-std()-Y"
-27 "tBodyAcc-std()-Z"
-28 "tGravityAcc-std()-X"
-29 "tGravityAcc-std()-Y"
-30 "tGravityAcc-std()-Z"
-31 "tBodyAccJerk-std()-X"
-32 "tBodyAccJerk-std()-Y"
-33 "tBodyAccJerk-std()-Z"
-34 "tBodyGyro-std()-X"
-35 "tBodyGyro-std()-Y"
-36 "tBodyGyro-std()-Z"
-37 "tBodyGyroJerk-std()-X"
-38 "tBodyGyroJerk-std()-Y"
-39 "tBodyGyroJerk-std()-Z" 40 "fBodyAcc-std()-X"
-41 "fBodyAcc-std()-Y"
-42 "fBodyAcc-std()-Z"
-43 "fBodyAccJerk-std()-X"
-44 "fBodyAccJerk-std()-Y"
-45 "fBodyAccJerk-std()-Z"
-46 "fBodyGyro-std()-X"
-47 "fBodyGyro-std()-Y"
-48 "fBodyGyro-std()-Z"
-49 "subject" - experiment participants, labeled from 1 to 30
-50 "activity" - activities conducted in the experiemnt, including "standing", "sitting","laying","walking","walking\_downstairs", and "walking\_upstairs"
+10. "tBodyGyro-mean()-X"
+11. "tBodyGyro-mean()-Y"
+12. "tBodyGyro-mean()-Z"
+13. "tBodyGyroJerk-mean()-X"
+14. "tBodyGyroJerk-mean()-Y"
+15. "tBodyGyroJerk-mean()-Z"
+16. "fBodyAcc-mean()-X"
+17. "fBodyAcc-mean()-Y"
+18. "fBodyAcc-mean()-Z"
+19. "fBodyAccJerk-mean()-X"
+20. "fBodyAccJerk-mean()-Y"
+21. "fBodyAccJerk-mean()-Z"
+22. "fBodyGyro-mean()-X"
+23. "fBodyGyro-mean()-Y"
+24. "fBodyGyro-mean()-Z"
+25. "tBodyAcc-std()-X"
+26. "tBodyAcc-std()-Y"
+27. "tBodyAcc-std()-Z"
+28. "tGravityAcc-std()-X"
+29. "tGravityAcc-std()-Y"
+30. "tGravityAcc-std()-Z"
+31. "tBodyAccJerk-std()-X"
+32. "tBodyAccJerk-std()-Y"
+33. "tBodyAccJerk-std()-Z"
+34. "tBodyGyro-std()-X"
+35. "tBodyGyro-std()-Y"
+36. "tBodyGyro-std()-Z"
+37. "tBodyGyroJerk-std()-X"
+38. "tBodyGyroJerk-std()-Y"
+39. "tBodyGyroJerk-std()-Z"
+40. "fBodyAcc-std()-X"
+41. "fBodyAcc-std()-Y"
+42. "fBodyAcc-std()-Z"
+43. "fBodyAccJerk-std()-X"
+44. "fBodyAccJerk-std()-Y"
+45. "fBodyAccJerk-std()-Z"
+46. "fBodyGyro-std()-X"
+47. "fBodyGyro-std()-Y"
+48. "fBodyGyro-std()-Z"
+49. "subject" - experiment participants, labeled from 1 to 30
+50. "activity" - activities conducted in the experiemnt, including "standing", "sitting","laying","walking","walking\_downstairs", and "walking\_upstairs"
 
 **Feature Selection**
 =====================
