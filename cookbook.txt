@@ -1,0 +1,116 @@
+##Codebook
+This is a re-arranged dataset merged from the Human Activity Recognition Using Smartphones Dataset, containing the mean values of the variables (as column names of the merged data) for each subject and each activity.  
+
+==================================================================  
+Human Activity Recognition Using Smartphones Dataset  
+Adopted from Version 1.0  
+==================================================================  
+The experiments have been carried out with a group of 30 volunteers that were randomly separted into 2 groups (training and test) for the purpose of analysis. Each person performed six activities (standing, sitting, laying, walking, walking_downstairs, walking_upstairs) wearing a smartphone on the waist. Using its embedded accelerometer and gyroscope, 3-axial linear acceleration and 3-axial angular velocity were captured at a constant rate of 50Hz.  
+
+For more information about this dataset contact: activityrecognition@smartlab.ws  
+
+####Columns in the tidy dataset  
+The data contains the mean values of the variables labeled for the columns of the data, together with a "subject" colomn and an "activity" column that contain the information of the experiment subjects (1-30) and the activities conducted in the experiment, respectively.  
+
+The data variables cover the estimated mean and standard deviation (std) of the features measurement. And the list of the variables, including "subject" and "activity", in the data is:  
+1. "tBodyAcc-mean()-X"     
+2. "tBodyAcc-mean()-Y"     
+3. "tBodyAcc-mean()-Z"     
+4. "tGravityAcc-mean()-X"  
+5. "tGravityAcc-mean()-Y"  
+6. "tGravityAcc-mean()-Z"  
+7. "tBodyAccJerk-mean()-X"  
+8. "tBodyAccJerk-mean()-Y"  
+9. "tBodyAccJerk-mean()-Z"  
+10. "tBodyGyro-mean()-X"    
+11. "tBodyGyro-mean()-Y"    
+12. "tBodyGyro-mean()-Z"    
+13. "tBodyGyroJerk-mean()-X"  
+14. "tBodyGyroJerk-mean()-Y"  
+15. "tBodyGyroJerk-mean()-Z"  
+16. "fBodyAcc-mean()-X"     
+17. "fBodyAcc-mean()-Y"     
+18. "fBodyAcc-mean()-Z"     
+19. "fBodyAccJerk-mean()-X"  
+20. "fBodyAccJerk-mean()-Y"  
+21. "fBodyAccJerk-mean()-Z"  
+22. "fBodyGyro-mean()-X"    
+23. "fBodyGyro-mean()-Y"    
+24. "fBodyGyro-mean()-Z"    
+25. "tBodyAcc-std()-X"      
+26. "tBodyAcc-std()-Y"      
+27. "tBodyAcc-std()-Z"      
+28. "tGravityAcc-std()-X"   
+29. "tGravityAcc-std()-Y"   
+30. "tGravityAcc-std()-Z"   
+31. "tBodyAccJerk-std()-X"  
+32. "tBodyAccJerk-std()-Y"  
+33. "tBodyAccJerk-std()-Z"  
+34. "tBodyGyro-std()-X"     
+35. "tBodyGyro-std()-Y"     
+36. "tBodyGyro-std()-Z"      
+37. "tBodyGyroJerk-std()-X"  
+38. "tBodyGyroJerk-std()-Y"  
+39. "tBodyGyroJerk-std()-Z"  
+40. "fBodyAcc-std()-X"      
+41. "fBodyAcc-std()-Y"      
+42. "fBodyAcc-std()-Z"      
+43. "fBodyAccJerk-std()-X"  
+44. "fBodyAccJerk-std()-Y"  
+45. "fBodyAccJerk-std()-Z"  
+46. "fBodyGyro-std()-X"     
+47. "fBodyGyro-std()-Y"     
+48. "fBodyGyro-std()-Z"     
+49. "subject"  - experiment participants, labeled from 1 to 30           
+50. "activity" - activities conducted in the experiemnt, including "standing", "sitting","laying","walking","walking_downstairs", and "walking_upstairs"  
+
+
+**Feature Selection**  
+=================  
+
+The variables' names in this re-arranged tidy dataset reflect features of the experiment data.
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ  
+tGravityAcc-XYZ  
+tBodyAccJerk-XYZ  
+tBodyGyro-XYZ  
+tBodyGyroJerk-XYZ  
+tBodyAccMag  
+tGravityAccMag  
+tBodyAccJerkMag  
+tBodyGyroMag  
+tBodyGyroJerkMag  
+fBodyAcc-XYZ  
+fBodyAccJerk-XYZ  
+fBodyGyro-XYZ  
+fBodyAccMag  
+fBodyAccJerkMag  
+fBodyGyroMag  
+fBodyGyroJerkMag  
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:  
+
+gravityMean  
+tBodyAccMean  
+tBodyAccJerkMean  
+tBodyGyroMean   
+tBodyGyroJerkMean   
+
+Notes: 
+======
+- Features are normalized and bounded within [-1,1].
+
+The set of variables that were estimated from these signals are:  
+
+mean(): Mean value  
+std(): Standard deviation  
+
